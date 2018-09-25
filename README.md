@@ -2,7 +2,11 @@
 
 [![Twitter](https://img.shields.io/badge/Twitter-%40kuyazee-blue.svg)](http://twitter.com/kuyazee) [![Github](https://img.shields.io/badge/Github-kuyazee-blue.svg)](https://github.com/kuyazee) [![Cocoapods](https://img.shields.io/badge/Cocoapods-1.2.0-red.svg)](#installation)
 
-The __VIP-C Kit__ is available through the dependency manager [CocoaPods](http://cocoapods.org). 
+The __VIP-C Kit__ helper protocols is available through the dependency manager [CocoaPods](http://cocoapods.org). 
+
+```Ruby
+pod `VIPC-Kit`
+```
 
 ===================
 
@@ -12,12 +16,12 @@ __VIP-C__ stands for **V**iew **I**nteractor **P**resenter - **C**oordinator. Th
 
 ## See Sample Project
 
-### Todos
+## Todos
 
  - Fix Readme.md
- - More Sample Projects
+ - Bigger Sample Projects.
  - Create special Coordinators for UITabBarController, UINavigationController, etc.
- - Write Unit Tests
+ - Sample Unit Tests
 
 License
 ----
