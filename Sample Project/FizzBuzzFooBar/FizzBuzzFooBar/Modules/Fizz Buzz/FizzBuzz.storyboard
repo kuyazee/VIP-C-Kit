@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fizz Buzz View Controller-->
+        <scene sceneID="DiQ-14-R6L">
+            <objects>
+                <viewController storyboardIdentifier="FizzBuzzViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Bi-c3-BSD" customClass="FizzBuzzViewController" customModule="FizzBuzzFooBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="75p-6K-VXe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lrs-NP-XZG">
+                                <rect key="frame" x="16" y="99" width="343" height="61"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLE-Jc-9dc">
+                                <rect key="frame" x="16" y="168" width="343" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <action selector="testButtonClicked:" destination="1Bi-c3-BSD" eventType="touchUpInside" id="5Ws-7O-dd2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gsp-0w-DFE" firstAttribute="trailing" secondItem="Lrs-NP-XZG" secondAttribute="trailing" constant="16" id="9Ec-c8-svR"/>
+                            <constraint firstItem="Lrs-NP-XZG" firstAttribute="leading" secondItem="gsp-0w-DFE" secondAttribute="leading" constant="16" id="DRJ-vt-fWd"/>
+                            <constraint firstItem="gsp-0w-DFE" firstAttribute="trailing" secondItem="KLE-Jc-9dc" secondAttribute="trailing" constant="16" id="My6-Kw-WLn"/>
+                            <constraint firstItem="Lrs-NP-XZG" firstAttribute="top" secondItem="gsp-0w-DFE" secondAttribute="top" constant="79" id="TNm-81-zly"/>
+                            <constraint firstItem="KLE-Jc-9dc" firstAttribute="leading" secondItem="gsp-0w-DFE" secondAttribute="leading" constant="16" id="f0a-VO-4Zk"/>
+                            <constraint firstItem="KLE-Jc-9dc" firstAttribute="top" secondItem="Lrs-NP-XZG" secondAttribute="bottom" constant="8" id="fe7-qr-SQl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gsp-0w-DFE"/>
+                    </view>
+                    <connections>
+                        <outlet property="numberTextField" destination="Lrs-NP-XZG" id="cWq-Zg-Yuq"/>
+                        <outlet property="testButton" destination="KLE-Jc-9dc" id="VPD-J7-92L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJA-4R-frT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="-159.67016491754123"/>
+        </scene>
+    </scenes>
+</document>

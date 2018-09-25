@@ -1,0 +1,32 @@
+PODS:
+  - DropDown (2.3.2)
+  - IQKeyboardManagerSwift (6.1.1)
+  - SwiftHEXColors (1.1.2)
+  - Toast-Swift (3.0.1)
+  - TTGSnackbar (1.7.3)
+
+DEPENDENCIES:
+  - DropDown
+  - IQKeyboardManagerSwift
+  - SwiftHEXColors
+  - Toast-Swift
+  - TTGSnackbar
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DropDown
+    - IQKeyboardManagerSwift
+    - SwiftHEXColors
+    - Toast-Swift
+    - TTGSnackbar
+
+SPEC CHECKSUMS:
+  DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
+  IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
+  SwiftHEXColors: 7f9f7e6bdce888d821e11749279733e5ddff5f51
+  Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
+  TTGSnackbar: a66e929fd17d662152ec0964990a86e966310edb
+
+PODFILE CHECKSUM: e2ae84cf2e3121c91e5fe9d1c8301e5bb38062bb
+
+COCOAPODS: 1.5.3

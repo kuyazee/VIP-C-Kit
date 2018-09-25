@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="Qyu-mw-MbO">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0UT-Vi-X96" customClass="OnboardingViewController" customModule="FizzBuzzFooBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tvd-JK-Pi6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is your first time running this app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9b-cs-HJW">
+                                <rect key="frame" x="16" y="56" width="343" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d84-ZI-lrp">
+                                <rect key="frame" x="16" y="136" width="343" height="30"/>
+                                <state key="normal" title="Proceed"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qv9-UB-0x2" firstAttribute="trailing" secondItem="d84-ZI-lrp" secondAttribute="trailing" constant="16" id="AAp-dz-kpn"/>
+                            <constraint firstItem="d84-ZI-lrp" firstAttribute="leading" secondItem="Qv9-UB-0x2" secondAttribute="leading" constant="16" id="GYT-MM-19c"/>
+                            <constraint firstItem="V9b-cs-HJW" firstAttribute="leading" secondItem="Qv9-UB-0x2" secondAttribute="leading" constant="16" id="jHo-Ud-Oa8"/>
+                            <constraint firstItem="d84-ZI-lrp" firstAttribute="top" secondItem="V9b-cs-HJW" secondAttribute="bottom" constant="8" id="rKx-9U-MAb"/>
+                            <constraint firstItem="V9b-cs-HJW" firstAttribute="top" secondItem="Qv9-UB-0x2" secondAttribute="top" constant="36" id="rPZ-gb-acA"/>
+                            <constraint firstItem="Qv9-UB-0x2" firstAttribute="trailing" secondItem="V9b-cs-HJW" secondAttribute="trailing" constant="16" id="s81-g7-Esz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qv9-UB-0x2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="73d-dB-2MT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-218.40000000000001" y="-134.48275862068968"/>
+        </scene>
+    </scenes>
+</document>
