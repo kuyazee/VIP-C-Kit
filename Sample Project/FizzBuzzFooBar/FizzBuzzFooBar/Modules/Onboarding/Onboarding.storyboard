@@ -27,6 +27,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d84-ZI-lrp">
                                 <rect key="frame" x="16" y="136" width="343" height="30"/>
                                 <state key="normal" title="Proceed"/>
+                                <connections>
+                                    <action selector="proceedButtonClicked:" destination="0UT-Vi-X96" eventType="touchUpInside" id="m2B-1M-14v"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -40,6 +43,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qv9-UB-0x2"/>
                     </view>
+                    <connections>
+                        <outlet property="proceedButton" destination="d84-ZI-lrp" id="CKR-Ih-nDG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73d-dB-2MT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

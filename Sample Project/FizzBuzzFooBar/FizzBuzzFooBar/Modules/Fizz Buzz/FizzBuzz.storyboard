@@ -27,7 +27,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLE-Jc-9dc">
                                 <rect key="frame" x="16" y="168" width="343" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Test"/>
+                                <state key="normal" title="FizzBuzz Test"/>
                                 <connections>
                                     <action selector="testButtonClicked:" destination="1Bi-c3-BSD" eventType="touchUpInside" id="5Ws-7O-dd2"/>
                                 </connections>

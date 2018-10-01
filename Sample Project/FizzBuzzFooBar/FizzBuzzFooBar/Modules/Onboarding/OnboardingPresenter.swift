@@ -9,11 +9,17 @@
 import UIKit
 
 protocol OnboardingPresenterInput: class {
-
+    func showProceedAlert()
 }
 
 class OnboardingPresenter: OnboardingPresenterInput {
 
     var output: OnboardingViewInput?
+
+    func showProceedAlert() {
+        self.output?.showAlert(
+            withTitle: "Are you really sure you want to proceed?",
+            andMessage: "You will never see this view ever again.")
+    }
 
 }

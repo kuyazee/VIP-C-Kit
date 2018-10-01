@@ -9,16 +9,31 @@
 import UIKit
 
 protocol OnboardingViewInput: class {
-
+    func showAlert(withTitle title: String, andMessage message: String)
 }
 
 class OnboardingViewController: UIViewController, OnboardingViewInput {
 
     var output: OnboardingInteractorInput?
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    @IBOutlet weak var proceedButton: UIButton!
+    
+    @IBAction func proceedButtonClicked(_ sender: Any?) {
+        self.output?.userWantsToProceed()
     }
+
+    func showAlert(withTitle title: String, andMessage message: String) {
+        let alertController = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(
+            title: "Ok",
+            style: .default,
+            handler: { _ in
+                self.output?.proceed()
+        }))
+        self.present(alertController, animated: true, completion: nil)
+    }
+
 
 }

@@ -40,9 +40,9 @@ class OnboardingCoordinator: Coordinator, PresentingControllerProvider, RootView
 }
 
 extension OnboardingCoordinator: OnboardingInteractorDelegate {
-    func createOnboardingViewController() -> OnboardingViewController {
-        let viewController = AppStoryboard.Onboarding
-            .instantiate(OnboardingViewController.self)
+
+    func createOnboardingViewController() -> UIViewController {
+        let viewController = AppStoryboard.Onboarding.instantiate(OnboardingViewController.self)
         let interactor = OnboardingInteractor()
         let presenter = OnboardingPresenter()
 
@@ -52,5 +52,9 @@ extension OnboardingCoordinator: OnboardingInteractorDelegate {
         interactor.delegate = self
 
         return viewController
+    }
+
+    func onboardingInteractorDidFinish(_ onboardingInteractor: OnboardingInteractor) {
+        self.delegate?.onboardingCoordinatorDidFinish(self)
     }
 }

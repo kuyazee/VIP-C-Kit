@@ -154,7 +154,7 @@ class FizzBuzzModuleTests: XCTestCase {
     /// Send actions from the View-Interactor to Test the Mock Output
     func testViewInteractor() {
         let viewController = AppStoryboard.FizzBuzz.instantiate(FizzBuzzViewController.self)
-        _ = viewController.view
+        //_ = viewController.view
         let interactor = FizzBuzzInteractor()
         let mockOutput = MockFizzBuzzPresenterInput()
         viewController.output = interactor

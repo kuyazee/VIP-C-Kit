@@ -11,6 +11,10 @@
 		A63CBB6E214B98F20043E5B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63CBB6D214B98F20043E5B2 /* AppDelegate.swift */; };
 		A63CBB75214B98F40043E5B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63CBB74214B98F40043E5B2 /* Assets.xcassets */; };
 		A63CBB78214B98F40043E5B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63CBB76214B98F40043E5B2 /* LaunchScreen.storyboard */; };
+		A6523A1D215F655000DB52F6 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6523A19215F655000DB52F6 /* AuthCoordinator.swift */; };
+		A6523A1E215F655000DB52F6 /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6523A1A215F655000DB52F6 /* AuthPresenter.swift */; };
+		A6523A1F215F655000DB52F6 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6523A1B215F655000DB52F6 /* AuthViewController.swift */; };
+		A6523A20215F655000DB52F6 /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6523A1C215F655000DB52F6 /* AuthInteractor.swift */; };
 		A68A8E15215892830055D2FE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68A8E13215892810055D2FE /* Coordinator.swift */; };
 		A68A8E16215892830055D2FE /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68A8E14215892820055D2FE /* Providers.swift */; };
 		A68A8E1C215892940055D2FE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68A8E18215892930055D2FE /* Result.swift */; };
@@ -27,7 +31,6 @@
 		A68A8E3D215896710055D2FE /* OnboardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68A8E39215896710055D2FE /* OnboardingPresenter.swift */; };
 		A68A8E3E215896710055D2FE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68A8E3A215896710055D2FE /* OnboardingViewController.swift */; };
 		A68A8E3F215896710055D2FE /* OnboardingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68A8E3B215896710055D2FE /* OnboardingInteractor.swift */; };
-		A68A8E412158996A0055D2FE /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68A8E402158996A0055D2FE /* MainCoordinator.swift */; };
 		A68A8E4D2158B16E0055D2FE /* FizzBuzzCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68A8E492158B16E0055D2FE /* FizzBuzzCoordinator.swift */; };
 		A68A8E4E2158B16E0055D2FE /* FizzBuzzPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68A8E4A2158B16E0055D2FE /* FizzBuzzPresenter.swift */; };
 		A68A8E4F2158B16E0055D2FE /* FizzBuzzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68A8E4B2158B16E0055D2FE /* FizzBuzzViewController.swift */; };
@@ -60,6 +63,10 @@
 		A63CBB74214B98F40043E5B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A63CBB77214B98F40043E5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A63CBB79214B98F40043E5B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6523A19215F655000DB52F6 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		A6523A1A215F655000DB52F6 /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		A6523A1B215F655000DB52F6 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		A6523A1C215F655000DB52F6 /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
 		A68A8E13215892810055D2FE /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A68A8E14215892820055D2FE /* Providers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Providers.swift; sourceTree = "<group>"; };
 		A68A8E18215892930055D2FE /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -76,7 +83,6 @@
 		A68A8E39215896710055D2FE /* OnboardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenter.swift; sourceTree = "<group>"; };
 		A68A8E3A215896710055D2FE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		A68A8E3B215896710055D2FE /* OnboardingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractor.swift; sourceTree = "<group>"; };
-		A68A8E402158996A0055D2FE /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		A68A8E492158B16E0055D2FE /* FizzBuzzCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzCoordinator.swift; sourceTree = "<group>"; };
 		A68A8E4A2158B16E0055D2FE /* FizzBuzzPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzPresenter.swift; sourceTree = "<group>"; };
 		A68A8E4B2158B16E0055D2FE /* FizzBuzzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +193,17 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		A6523A18215F653E00DB52F6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A6523A19215F655000DB52F6 /* AuthCoordinator.swift */,
+				A6523A1A215F655000DB52F6 /* AuthPresenter.swift */,
+				A6523A1B215F655000DB52F6 /* AuthViewController.swift */,
+				A6523A1C215F655000DB52F6 /* AuthInteractor.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		A68A8E17215892860055D2FE /* Types */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,8 +236,8 @@
 			isa = PBXGroup;
 			children = (
 				A68A8E2E215893F40055D2FE /* AppCoordinator.swift */,
+				A6523A18215F653E00DB52F6 /* Authentication */,
 				A68A8E36215896540055D2FE /* Onboarding */,
-				A68A8E372158965A0055D2FE /* Main */,
 				A68A8E482158B14B0055D2FE /* Fizz Buzz */,
 			);
 			path = Modules;
@@ -260,14 +277,6 @@
 				A68A8E3B215896710055D2FE /* OnboardingInteractor.swift */,
 			);
 			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		A68A8E372158965A0055D2FE /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				A68A8E402158996A0055D2FE /* MainCoordinator.swift */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		A68A8E422158AF5F0055D2FE /* Workers */ = {
@@ -495,12 +504,15 @@
 				A63CBB6E214B98F20043E5B2 /* AppDelegate.swift in Sources */,
 				A68A8E4D2158B16E0055D2FE /* FizzBuzzCoordinator.swift in Sources */,
 				A68A8E3E215896710055D2FE /* OnboardingViewController.swift in Sources */,
+				A6523A1D215F655000DB52F6 /* AuthCoordinator.swift in Sources */,
 				A68A8E25215892D40055D2FE /* CanShowLoader.swift in Sources */,
 				A68A8E1F215892940055D2FE /* AnyError.swift in Sources */,
 				A68A8E1D215892940055D2FE /* NoError.swift in Sources */,
 				A68A8E3F215896710055D2FE /* OnboardingInteractor.swift in Sources */,
 				A68A8E3D215896710055D2FE /* OnboardingPresenter.swift in Sources */,
-				A68A8E412158996A0055D2FE /* MainCoordinator.swift in Sources */,
+				A6523A1E215F655000DB52F6 /* AuthPresenter.swift in Sources */,
+				A6523A1F215F655000DB52F6 /* AuthViewController.swift in Sources */,
+				A6523A20215F655000DB52F6 /* AuthInteractor.swift in Sources */,
 				A68A8E35215894F20055D2FE /* PersistenceService.swift in Sources */,
 				A68A8E502158B16E0055D2FE /* FizzBuzzInteractor.swift in Sources */,
 				A68A8E1C215892940055D2FE /* Result.swift in Sources */,

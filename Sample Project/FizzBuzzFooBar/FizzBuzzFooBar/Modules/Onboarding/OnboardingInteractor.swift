@@ -9,11 +9,13 @@
 import UIKit
 
 protocol OnboardingInteractorDelegate: class {
-
+    func onboardingInteractorDidFinish(_ onboardingInteractor: OnboardingInteractor)
 }
 
 protocol OnboardingInteractorInput: class {
+    func userWantsToProceed()
 
+    func proceed()
 }
 
 
@@ -21,5 +23,13 @@ class OnboardingInteractor: OnboardingInteractorInput {
 
     var output: OnboardingPresenterInput?
     weak var delegate: OnboardingInteractorDelegate?
+
+    func userWantsToProceed() {
+        self.output?.showProceedAlert()
+    }
+
+    func proceed() {
+        self.delegate?.onboardingInteractorDidFinish(self)
+    }
 
 }
